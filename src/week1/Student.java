@@ -1,4 +1,4 @@
-package week1;
+﻿package week1;
 
 public class Student {
 
@@ -11,6 +11,7 @@ public class Student {
      */
     Student() {
         // TODO:
+system.out.print();
     }
 
     /**
