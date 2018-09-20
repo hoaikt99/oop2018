@@ -31,7 +31,7 @@ public class StudentManagement {
    
             }
     }
-    public void removeStudent(String id)
+    public void studentsByGroup(String id)
    {
         for(int i=0;i<4;i++)
         {
@@ -93,5 +93,5 @@ public class StudentManagement {
         StudentManagement ds = new Studentmanagement();
         ds.studentsByGroup();//in sv theo lop
 	ds.removeStudent("17020754");
-	ds.studentbyGroup;
+	ds.studentsByGroup;
 }
