@@ -1,8 +1,4 @@
-﻿package week1;
-
-public class StudentManagement {
-
-      public static int d=4;
+﻿     public static int d=4;
 
     public static boolean sameGroup(Student s3, Student s2)
     {
@@ -12,35 +8,16 @@ public class StudentManagement {
 	return false;
     }
     public static Student s[]= new Student[100];
-    public void studentsByGroup(){
-        for(int i=0;i<4;i++)
-        {
-            
-            System.out.println("sinh vien lop: "+ s[i].getgroup());
-            System.out.println(s[i].getname());
-            for(int k=i;k>0;k--)
-            {
-                if(s[i].getgroup().equals(s[k-1].getgroup())==true)
-                   break;
-            }
-            for(int j=i+1;j<4;j++)
-            if(s[i].getgroup().equals(s[j].getgroup())==true)
-            {
-                System.out.println(s[j].getname());
-            }
-   
-            }
-    }
-    public void removeStudent(String id)
+   public void studentsByGroup()
    {
         for(int i=0;i<4;i++)
         {
            int check=0;
            for(int j=0;j<i;j++)
            {
-               if(s[j].getgroup().equals(s[i].getgroup())==true)
-                    check=1;
-                    break;
+               if(s[i].getgroup().equals(s[j].getgroup())==true)
+                    {check=1;
+                    break;}
                
            }
            if(check==0)
@@ -49,7 +26,7 @@ public class StudentManagement {
                System.out.println(s[i].getname());
                for(int j=i+1;j<4;j++)
                {
-                 if(s[i].getgroup().equals(s[j].getname())==true)
+                 if(s[i].getgroup().equals(s[j].getgroup())==true)
                      System.out.println(s[j].getname());
  
                }
@@ -65,8 +42,8 @@ public class StudentManagement {
       {
 	if(s[i].getid().equals(id)==true)
 	{
-	for(int j=i;j<d;j++)
-	s[i]=s[j+1];
+	for(int j=i;j<d-1;j++)
+	s[j]=s[j+1];
 	d--;
 	break;
 	}
@@ -90,8 +67,8 @@ public class StudentManagement {
 	s4.getInfo();
 	System.out.println(sameGroup(s3, s2));
         s[0]=s1;s[1]=s2;s[2]=s3;s[3]=s4;
-        StudentManagement ds = new Studentmanagement();
+        JavaApplication3 ds = new JavaApplication3();
         ds.studentsByGroup();//in sv theo lop
-	ds.removeStudent("17020754");
-	ds.studentbyGroup;
+	ds.removeStudent("17020754");//xoa sv theo id
+	ds.studentsByGroup();
 }
