@@ -31,33 +31,8 @@ public class StudentManagement {
    
             }
     }
-    public void studentsByGroup(String id)
-   {
-        for(int i=0;i<4;i++)
-        {
-           int check=0;
            for(int j=0;j<i;j++)
-           {
-               if(s[j].getgroup().equals(s[i].getgroup())==true)
-                    check=1;
-                    break;
-               
-           }
-           if(check==0)
-           {
-               System.out.println("group: "+s[i].getgroup());
-               System.out.println(s[i].getname());
-               for(int j=i+1;j<4;j++)
-               {
-                 if(s[i].getgroup().equals(s[j].getname())==true)
-                     System.out.println(s[j].getname());
- 
-               }
-           }
-              
-           
-      }
-   }
+    
   public void removeStudent(String id)
 {
     
@@ -90,7 +65,7 @@ public class StudentManagement {
 	s4.getInfo();
 	System.out.println(sameGroup(s3, s2));
         s[0]=s1;s[1]=s2;s[2]=s3;s[3]=s4;
-        StudentManagement ds = new Studentmanagement();
+        StudentManagement ds = new StudentManagement();
         ds.studentsByGroup();//in sv theo lop
 	ds.removeStudent("17020754");
 	ds.studentsByGroup;
