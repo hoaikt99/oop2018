@@ -89,7 +89,7 @@ public class StudentManagement{
         System.out.println("danh sach sinh vien in theo lop: ");
         ds.studentsByGroup();//in sv theo lop
         System.out.println("danh sach sinh vien xoa theo id: ");
-	ds.removeStudent("17020754");//xoa sv theo id
+	ds.removeStudent("000");//xoa sv theo id
 	ds.studentsByGroup();
 }
 }
