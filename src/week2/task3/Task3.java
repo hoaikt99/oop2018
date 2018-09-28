@@ -1,8 +1,6 @@
 package week2.task3;
-
-public class Task3 {
-  package Tash1;
 import java.util.Scanner;
+
 class giao_vien{
     private String name, lop;
     private int tuoi;
@@ -39,7 +37,7 @@ class giao_vien{
         System.out.println("Thong tin giao vien: ");
 		System.out.println("Ten giao vien: " + name);
 		System.out.println("Tuoi: "+ tuoi);
-		System.out.println("Lop giang day: "+lop)
+		System.out.println("Lop giang day: "+lop);
 	}
 	
 }
@@ -153,30 +151,7 @@ class benhnhan{
     }
 }
 
-class Task3 {
-    public static giao_vien n1[]=new giao_vien[100];
-
-    public static void main(String [] args) {
-        giao_vien other = new giao_vien("b", "11", 27);
-       Scanner a=new Scanner(System.in);
-       Scanner b=new Scanner(System.in);
-       for(int i=0;i<2;i++){
-           String name,lop;
-           int tuoi;
-           System.out.println("giao vien thu "+i);
-           name=a.nextLine();
-           lop=a.nextLine();
-           tuoi=b.nextInt();
-           n1[i]= new giao_vien(name,lop,tuoi);
-
-       }
-        for(int i=0;i<2;i++){
-       n1[i].print_();
-       n1[i].check(other);
-        }
-    }
-}
-
+public class Task3 {
 }
 
 //TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
