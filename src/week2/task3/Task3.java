@@ -1,6 +1,4 @@
 package week2.task3;
-import java.util.Scanner;
-
 class giao_vien{
     private String name, lop;
     private int tuoi;
