@@ -4,12 +4,23 @@ public class Week3 {
 
     public static int max(int m, int n) {
         // TODO: Tìm giá trị lớn nhất của hai số nguyên, giá trị trả về của hàm là số lớn nhất
-        return -1;
+        if(m>n) return m;
+		else return n;
+        //return -1;
     }
 
     public static int minOfArray(int[] array) {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử)
-        return -1;
+        int n= array.length;
+		int min = array[0];
+		for(int i=0;i<n;i++)
+		{
+		if(array[i]<=array[0];
+		min=array[i];
+		}
+		return min;
+		
+        //return -1;
     }
 
     /**
@@ -20,6 +31,11 @@ public class Week3 {
      */
     public static String calculateBMI(double weight, double height) {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
-        return null;
+        double BMI = weight/(height*height);
+		if(BMI<=18,5) return " thieu can";
+		else if(BMI<23&&BMI>=18,5) return " binh thuong";
+		else if(BMI>=23&&BMI<25) return " thua can";
+		else if(BMI>=25) return " beo phi";
+        //return null;
     }
 }
