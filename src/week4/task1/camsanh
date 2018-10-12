@@ -1,0 +1,26 @@
+class camsanh extends hoaqua
+{
+    private String nguongoc;
+    public camsanh() {};
+    public camsanh(String nguongoc, int soluong, int gia)
+    {   super(nguongoc, soluong, gia);
+        this.nguongoc= nguongoc;
+    }
+    @Override
+    public void setnguongoc()
+    {
+        this.nguongoc= nguongoc;
+    }
+    @Override
+    public String getnguongoc()
+    {
+        return nguongoc;
+    }
+    public void in()
+    {
+        System.out.println("cam sanh");
+        System.out.println("nguoc goc: "+ this.getnguongoc());
+        System.out.println("gia ca: "+ this.getgia());
+        System.out.println("so luong: "+ this.getsoluong());
+    }
+}
