@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week4.task1;
+
+/**
+ *
+ * @author Hoai
+ */
+class quacam extends hoaqua
+{
+   private String nguongoc;
+   
+   public  quacam() {};
+   
+   public quacam(String nguongoc, int soluong, int gia)
+   {
+       super(nguongoc, soluong, gia);
+       this.nguongoc= nguongoc;
+   }
+   @Override
+    public void setnguongoc()
+    {
+        this.nguongoc= nguongoc;
+    }
+   @Override
+    public String getnguongoc()
+    {
+        return nguongoc;
+    }
+    public void in()
+    {
+        System.out.println(" qua cam: ");
+        System.out.println("nguongoc: "+ this.nguongoc);
+        System.out.println("so luong: "+ this.getsoluong());
+        System.out.println("gia ca: "+ this.getgia());
+    }
+}
+    
