@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week4.task1;
+
+/**
+ *
+ * @author Hoai
+ */
+public class qua {
+    public static void main( String args[])
+    {
+        camcaophong camcp = new camcaophong("vietnam",20,30000);
+        camcp.in();
+        camsanh cs = new camsanh("vietnam", 40, 50000);
+        cs.in();
+        quacam qc = new quacam("my", 30, 25000);
+        qc.in();
+        quatao qt = new quatao ("trung", 50, 15000);
+        qt.in();
+        
+    }
+}
