@@ -1,0 +1,31 @@
+class camcaophong extends hoaqua{
+
+ private String nguongoc;
+    
+public camcaophong(){};
+
+public camcaophong(String nguongoc, int soluong, int gia)
+{
+    super(nguongoc, soluong, gia);// goi constructor cua lop cha
+    this.nguongoc = nguongoc;
+}
+ 
+ @Override
+ public void setnguongoc()
+{
+    this.nguongoc=nguongoc;
+}
+ 
+ @Override
+ public String getnguongoc()
+ {
+     return nguongoc;
+ }
+ public void in()
+ {
+ System.out.println("cam cao phong");    
+ System.out.println("nguon goc: "+this.nguongoc );
+ System.out.println(" gia ca: "+ this.getgia());
+ System.out.println("so luong: "+ this.getsoluong());
+}
+}
