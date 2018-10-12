@@ -1,0 +1,52 @@
+
+class hoaqua {
+    /**
+     * tao doi tuong hoa qua
+     */
+    private String nguongoc;
+    private int gia, soluong;
+    public hoaqua()
+    {
+        /**
+         * ham constructor k chứa tham so
+         */
+    }
+    public hoaqua(String nguongoc, int soluong, int gia)
+    {
+        this.nguongoc= nguongoc;
+        this.soluong= soluong;
+        this.gia= gia;
+    }
+    public void setnguongoc()
+    {
+        this.nguongoc= nguongoc;
+    }
+    public String getnguongoc()
+    {
+    /**
+     *nguon goc
+     */
+        return nguongoc;
+    }
+    public void setgia()
+    {
+        /**
+         * giá
+         */
+        this.gia= gia;
+    }
+    public int getgia()
+    {
+        return gia;
+    }
+    public void setsoluong()
+    {/**
+     * so 
+     */
+        this.soluong=soluong;
+    }
+    public int getsoluong()
+    {
+        return soluong;
+    }
+}
