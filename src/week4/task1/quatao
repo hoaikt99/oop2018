@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week4.task1;
+
+/**
+ *
+ * @author Hoai
+ */
+class quatao extends hoaqua{
+    private String nguongoc;
+
+    public quatao() {}
+    public quatao(String nguongoc, int soluong, int gia)
+    {
+        super(nguongoc, soluong, gia);
+        this.nguongoc= nguongoc;
+    }
+    @Override
+    public void setnguongoc()
+    {
+        this.nguongoc= nguongoc;
+    }
+    @Override
+    public String getnguongoc()
+    {
+        return nguongoc;
+    }
+    public void in()
+    {
+        System.out.println("qua tao");
+        System.out.println("nguon goc: "+ this.nguongoc);
+        System.out.println("gia ca:"+ this.getgia());
+        System.out.println("so luong"+ this.getsoluong());
+    }
+    
+}
+
