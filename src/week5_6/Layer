@@ -1,0 +1,36 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Set;
+class Layer {
+    ArrayList<Shape> shape = new ArrayList<Shape>();
+     public int deteleteTriange() {
+	int sx =0;	
+	for(int i=0;i<this.shape.size();i++) {
+            if(shape.get(i) instanceof Triangle) { 
+		shape.remove(i);
+		sx++;
+		i--;
+            }		
+	}
+        return sx;
+}
+     public int deteleteCircle() {
+        int sx =0;	
+	for(int i=0;i<this.shape.size();i++) {
+            if(shape.get(i) instanceof Circle) {
+		shape.remove(i);
+		sx++;
+		i--;			
+            }
+            return sx;
+	}
+        return 0;
+}
+}
