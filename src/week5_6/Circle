@@ -1,0 +1,22 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+class Circle extends Shape{
+    private double radius;
+   public Circle(){}
+   public Circle (double radius)
+   {
+       this.radius = radius;
+   }
+   public void setpi(double pi)
+   {
+       this.radius=radius;
+   }
+   public double getradius()
+   {
+       return radius;
+   }  
+}
