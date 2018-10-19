@@ -1,0 +1,55 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+public class Shape {
+    
+    public double x,y;
+    public String color;
+    private boolean filled;
+    public Shape(){} // phương thuc k chua tham so;
+    public Shape( String color, boolean filled)
+    {
+        /**
+         * phuong thuc chua hai tham so
+         */
+        this.color= color;
+        this.filled=filled;
+    }
+    public void setx( double x)
+    {
+        this.x=x;
+    }
+    public double getx()
+    {
+        return x;
+    }
+    public void sety(double y)
+    {
+        this.y=y;
+    }
+    public double gety(double y)
+    {
+        return y;
+    }
+    public void setcolor(String color)
+    {
+        this.color=color;
+    }
+    public String getcolor()
+    {
+        return color;
+    }
+    public void setfilled(boolean filled)
+    {
+        this.filled=filled;
+    }
+    public boolean getfilled()
+    {
+        return filled;
+    }
+    
+    
+}
