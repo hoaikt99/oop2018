@@ -1,0 +1,21 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+
+import java.util.ArrayList;
+public class Diagram {
+    public ArrayList<Layer> layer = new ArrayList<Layer>();
+    /**
+     * @return result 
+     */
+    public int deleteCricle() {
+	int sx = 0;
+	for(int i=0;i<layer.size();i++) {
+            sx=sx+layer.get(i).deteleteCircle();
+	}
+	return sx;
+    }  
+}
