@@ -1,0 +1,23 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+class Square extends Shape{
+    private double dc;
+    public Square(){};
+    public Square( double dc)
+    {
+        this.dc=dc;
+    }
+    public void setdc( double dc)
+    {
+        this.dc=dc;
+    }
+    public double getdc()
+    {
+        return dc;
+    }
+    
+}
