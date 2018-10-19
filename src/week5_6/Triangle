@@ -1,0 +1,40 @@
+package week5_6;
+
+/**
+ *
+ * @author Hoai
+ */
+class Triangle extends Shape{
+    private double a,b,c;
+    public Triangle(){}
+    public Triangle(double a, double b, double c)
+    {
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    public void seta(double a)
+    {
+        this.a=a;
+    }
+    public double geta()
+    {
+        return a;
+    }
+    public void setb(double b)
+    {
+        this.b=b;
+    }
+    public double getb()
+    {
+        return b;
+    }
+    public void setc(double c)
+    {
+        this.c=c;
+    }
+    public double getc()
+    {
+        return c;
+    }
+}
