@@ -1,9 +1,7 @@
-
 package week7.task1;
-
-public class Addition extends BlnanyExpression{
+public class Subtraction extends BlnanyExpression{
     Expression left, right;
-    public Addition(Expression right, Expression left){
+    public Subtraction (Expression right , Expression left){
         this.left= left;
         this.right= right;
     }
@@ -17,12 +15,10 @@ public class Addition extends BlnanyExpression{
     }
     @Override
     public int evaluete(){
-        return this.left.evaluete()+ this.right.evaluete() ;
+        return this.right.evaluete()- this.left.evaluete() ;
     }
     @Override
     public String toString(){
-        return this.right.toString()+ " + "+ this.left.toString();
+        return this.right.toString()+ " - "+ this.left.toString();
     }
-    
-    
 }
